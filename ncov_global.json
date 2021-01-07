@@ -1,0 +1,2773 @@
+{
+  "meta": {
+    "build_url": "https://github.com/myusername/myrepository/",
+    "colorings": [
+      {
+        "key": "clade_membership",
+        "title": "Clade",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "location",
+        "scale": [
+          [
+            "Wuhan",
+            "#4C90C0"
+          ]
+        ],
+        "title": "Location",
+        "type": "categorical"
+      },
+      {
+        "key": "division",
+        "scale": [
+          [
+            "Hubei",
+            "#3F47C9"
+          ],
+          [
+            "Kerry",
+            "#4274CE"
+          ],
+          [
+            "Mayo",
+            "#4F97BB"
+          ],
+          [
+            "Cork",
+            "#64AC99"
+          ],
+          [
+            "Kildare",
+            "#D9AE3E"
+          ],
+          [
+            "Dublin",
+            "#E35F2D"
+          ]
+        ],
+        "title": "Admin Division",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#529AB6"
+          ],
+          [
+            "Ireland",
+            "#AABD52"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "region",
+        "scale": [
+          [
+            "Asia",
+            "#529AB6"
+          ],
+          [
+            "Europe",
+            "#AABD52"
+          ]
+        ],
+        "title": "Region",
+        "type": "categorical"
+      },
+      {
+        "key": "host",
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "age",
+        "title": "Age",
+        "type": "continuous"
+      },
+      {
+        "key": "sex",
+        "title": "Sex",
+        "type": "categorical"
+      },
+      {
+        "key": "author",
+        "title": "Authors",
+        "type": "categorical"
+      },
+      {
+        "key": "originating_lab",
+        "title": "Originating Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "submitting_lab",
+        "title": "Submitting Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#447CCD"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      },
+      {
+        "key": "country_exposure",
+        "title": "Country of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "division_exposure",
+        "title": "Division of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "region_exposure",
+        "title": "Region of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "legacy_clade_membership",
+        "title": "legacy_clade_membership",
+        "type": "categorical"
+      },
+      {
+        "key": "subclade_membership",
+        "title": "subclade_membership",
+        "type": "categorical"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#447CCD"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      }
+    ],
+    "description": "This is the description that appears below your visualization in Auspice. Edit me in `my_profiles/example/description.md`.\n\n\"Genomic epidemiology of ncov in Ireland\"\n\"Nextstrain build by nic_helix, Helixworks Technologies\" ",
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "division",
+      "distance_measure": "num_date",
+      "geo_resolution": "division",
+      "map_triplicate": true
+    },
+    "filters": [
+      "recency",
+      "location",
+      "division",
+      "country",
+      "region",
+      "host",
+      "author"
+    ],
+    "genome_annotations": {
+      "E": {
+        "end": 26472,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 26245,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "M": {
+        "end": 27191,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 26523,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "N": {
+        "end": 29533,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 28274,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF10": {
+        "end": 29674,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 29558,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF14": {
+        "end": 28955,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 28734,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1a": {
+        "end": 13468,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 266,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1b": {
+        "end": 21555,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 13468,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF3a": {
+        "end": 26220,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 25393,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF6": {
+        "end": 27387,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27202,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7a": {
+        "end": 27759,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27394,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7b": {
+        "end": 27887,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27756,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF8": {
+        "end": 28259,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27894,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF9b": {
+        "end": 28577,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 28284,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "S": {
+        "end": 25384,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 21563,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 29903,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "geo_resolutions": [
+      {
+        "demes": {
+          "Cork": {
+            "latitude": 51.899,
+            "longitude": -8.46
+          },
+          "Wuhan": {
+            "latitude": 30.554807,
+            "longitude": 114.271501
+          }
+        },
+        "key": "location"
+      },
+      {
+        "demes": {
+          "Cork": {
+            "latitude": 51.895349,
+            "longitude": -8.474381
+          },
+          "Dublin": {
+            "latitude": 53.3431,
+            "longitude": -6.262191
+          },
+          "Hubei": {
+            "latitude": 31.095477,
+            "longitude": 112.676644
+          },
+          "Kerry": {
+            "latitude": 52.14533445,
+            "longitude": -9.517401092833236
+          },
+          "Kildare": {
+            "latitude": 53.15436455,
+            "longitude": -6.8184175660976445
+          },
+          "Mayo": {
+            "latitude": 53.9087056,
+            "longitude": -9.298304863654256
+          }
+        },
+        "key": "division"
+      },
+      {
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Ireland": {
+            "latitude": 52.865,
+            "longitude": -7.979
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Asia": {
+            "latitude": 30.451098,
+            "longitude": 86.654576
+          },
+          "Europe": {
+            "latitude": 49.646237,
+            "longitude": 10.799454
+          }
+        },
+        "key": "region"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Helixworks Technologies",
+        "url": "www.helix.works"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ],
+    "title": "Genomic epidemiology of novel coronavirus - Global subsampling",
+    "updated": "2021-01-01"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "clade": "19A"
+      },
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "ORF1a: L2235I, N3833K"
+          },
+          "mutations": {
+            "ORF1a": [
+              "L2235I",
+              "N3833K"
+            ],
+            "nuc": [
+              "C6968A",
+              "T11764A"
+            ]
+          }
+        },
+        "name": "Wuhan/WH01/2019",
+        "node_attrs": {
+          "age": {
+            "value": "44"
+          },
+          "author": {
+            "author": "Weijun Chen et al",
+            "value": "Weijun Chen et al"
+          },
+          "clade_membership": {
+            "value": "19A"
+          },
+          "country": {
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1.000088900581841e-12,
+            "value": "China"
+          },
+          "div": 2,
+          "division": {
+            "value": "Hubei"
+          },
+          "division_exposure": {
+            "value": "Hubei"
+          },
+          "genbank_accession": {
+            "value": "LR757998"
+          },
+          "gisaid_epi_isl": {
+            "value": "EPI_ISL_406798"
+          },
+          "host": {
+            "value": "Human"
+          },
+          "legacy_clade_membership": {
+            "value": "unassigned"
+          },
+          "location": {
+            "value": "Wuhan"
+          },
+          "num_date": {
+            "confidence": [
+              2019.9849315068493,
+              2019.9849315068493
+            ],
+            "value": 2019.9849315068493
+          },
+          "originating_lab": {
+            "value": "General Hospital of Central Theater Command of People's Liberation Army of China"
+          },
+          "recency": {
+            "value": "Older"
+          },
+          "region": {
+            "value": "Asia"
+          },
+          "region_exposure": {
+            "value": "Asia"
+          },
+          "sex": {
+            "value": "Male"
+          },
+          "subclade_membership": {
+            "value": "19A"
+          },
+          "submitting_lab": {
+            "value": "BGI & Institute of Microbiology, Chinese Academy of Sciences & Shandong First Medical University & Shandong Academy of Medical Sciences & General Hospital of Central Theater Command of People's Liberation Army of China"
+          },
+          "url": "https://www.gisaid.org"
+        }
+      },
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: G392D, A876T, A2554V; ORF7a: I4N"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "G392D",
+                  "A876T",
+                  "A2554V"
+                ],
+                "ORF7a": [
+                  "I4N"
+                ],
+                "nuc": [
+                  "G1440A",
+                  "G2891A",
+                  "C7926T",
+                  "C13530T",
+                  "T27404A",
+                  "A27669G"
+                ]
+              }
+            },
+            "name": "hCoV-19/Ireland/MO-NVRL-20G31886/2020",
+            "node_attrs": {
+              "author": {
+                "author": "helix",
+                "value": "helix"
+              },
+              "clade_membership": {
+                "value": "19A"
+              },
+              "country": {
+                "confidence": {
+                  "Ireland": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "Ireland"
+              },
+              "div": 6,
+              "division": {
+                "value": "Mayo"
+              },
+              "division_exposure": {
+                "value": "Mayo"
+              },
+              "host": {
+                "value": "Homo sapiens"
+              },
+              "legacy_clade_membership": {
+                "value": "unassigned"
+              },
+              "location": {
+                "value": "Mayo"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.2117486338798,
+                  2020.2117486338798
+                ],
+                "value": 2020.2117486338798
+              },
+              "originating_lab": {
+                "value": "NVRL"
+              },
+              "recency": {
+                "value": "Older"
+              },
+              "region": {
+                "value": "Europe"
+              },
+              "region_exposure": {
+                "value": "Europe"
+              },
+              "subclade_membership": {
+                "value": "19A"
+              },
+              "submitting_lab": {
+                "value": "Helixworks Technologies"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "name": "Wuhan/Hu-1/2019",
+            "node_attrs": {
+              "author": {
+                "author": "Zhang et al",
+                "value": "Zhang et al"
+              },
+              "clade_membership": {
+                "value": "19A"
+              },
+              "country": {
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "China"
+              },
+              "div": 0,
+              "division": {
+                "value": "Hubei"
+              },
+              "division_exposure": {
+                "value": "Hubei"
+              },
+              "genbank_accession": {
+                "value": "MN908947"
+              },
+              "gisaid_epi_isl": {
+                "value": "EPI_ISL_402125"
+              },
+              "host": {
+                "value": "Human"
+              },
+              "legacy_clade_membership": {
+                "value": "unassigned"
+              },
+              "location": {
+                "value": "Wuhan"
+              },
+              "num_date": {
+                "confidence": [
+                  2019.9849315068493,
+                  2019.9849315068493
+                ],
+                "value": 2019.9849315068493
+              },
+              "recency": {
+                "value": "Older"
+              },
+              "region": {
+                "value": "Asia"
+              },
+              "region_exposure": {
+                "value": "Asia"
+              },
+              "subclade_membership": {
+                "value": "19A"
+              },
+              "submitting_lab": {
+                "value": "National Institute for Communicable Disease Control and Prevention (ICDC) Chinese Center for Disease Control and Prevention (China CDC)"
+              },
+              "url": "https://www.gisaid.org"
+            }
+          }
+        ],
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "clade_membership": {
+            "value": "19A"
+          },
+          "div": 0,
+          "legacy_clade_membership": {
+            "value": "unassigned"
+          },
+          "num_date": {
+            "confidence": [
+              2019.9556111813904,
+              2019.9844132976327
+            ],
+            "value": 2019.981560391857
+          },
+          "subclade_membership": {
+            "value": "19A"
+          },
+          "country": {
+            "confidence": {
+              "China": 0.5720989407939975,
+              "Ireland": 0.4279010592060027
+            },
+            "entropy": 0.6827143338152485,
+            "value": "China"
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "ORF1b: P314L; S: D614G",
+            "clade": "20A"
+          },
+          "mutations": {
+            "ORF1b": [
+              "P314L"
+            ],
+            "S": [
+              "D614G"
+            ],
+            "nuc": [
+              "C241T",
+              "C3037T",
+              "C14408T",
+              "A23403G"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: T951I; ORF1b: S2338L; ORF3a: V13L; S: A1078V"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "T951I"
+                ],
+                "ORF1b": [
+                  "S2338L"
+                ],
+                "ORF3a": [
+                  "V13L"
+                ],
+                "S": [
+                  "A1078V"
+                ],
+                "nuc": [
+                  "C3117T",
+                  "C20480T",
+                  "C24795T",
+                  "G25429T"
+                ]
+              }
+            },
+            "name": "hCoV-19/Ireland/D-NVRL-20G35089/2020",
+            "node_attrs": {
+              "author": {
+                "author": "helix",
+                "value": "helix"
+              },
+              "clade_membership": {
+                "value": "20A"
+              },
+              "country": {
+                "confidence": {
+                  "Ireland": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "Ireland"
+              },
+              "div": 8,
+              "division": {
+                "value": "Dublin"
+              },
+              "division_exposure": {
+                "value": "Dublin"
+              },
+              "host": {
+                "value": "Homo sapiens"
+              },
+              "legacy_clade_membership": {
+                "value": "A2a"
+              },
+              "location": {
+                "value": "Dublin"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.217213114754,
+                  2020.217213114754
+                ],
+                "value": 2020.217213114754
+              },
+              "originating_lab": {
+                "value": "NVRL"
+              },
+              "recency": {
+                "value": "Older"
+              },
+              "region": {
+                "value": "Europe"
+              },
+              "region_exposure": {
+                "value": "Europe"
+              },
+              "subclade_membership": {
+                "value": "20A"
+              },
+              "submitting_lab": {
+                "value": "Helixworks Technologies"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "N: S188L; ORF14: H35Y; ORF1b: T132I"
+                  },
+                  "mutations": {
+                    "N": [
+                      "S188L"
+                    ],
+                    "ORF14": [
+                      "H35Y"
+                    ],
+                    "ORF1b": [
+                      "T132I"
+                    ],
+                    "nuc": [
+                      "C13862T",
+                      "C24034T",
+                      "C28836T"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/D-NVRL-20G44563/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20A"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 7,
+                  "division": {
+                    "value": "Dublin"
+                  },
+                  "division_exposure": {
+                    "value": "Dublin"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Dublin"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2418032786886,
+                      2020.2418032786886
+                    ],
+                    "value": 2020.2418032786886
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20A"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "name": "hCoV-19/Ireland/D-NVRL-20G44442/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20A"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 4,
+                          "division": {
+                            "value": "Dublin"
+                          },
+                          "division_exposure": {
+                            "value": "Dublin"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Dublin"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.2418032786886,
+                              2020.2418032786886
+                            ],
+                            "value": 2020.2418032786886
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20A"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "name": "hCoV-19/Ireland/D-NVRL-20G35797/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20A"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 4,
+                          "division": {
+                            "value": "Dublin"
+                          },
+                          "division_exposure": {
+                            "value": "Dublin"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Dublin"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.217213114754,
+                              2020.217213114754
+                            ],
+                            "value": 2020.217213114754
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20A"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "20A"
+                      },
+                      "div": 4,
+                      "legacy_clade_membership": {
+                        "value": "A2a"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.193798406641,
+                          2020.217213114754
+                        ],
+                        "value": 2020.2114632437585
+                      },
+                      "subclade_membership": {
+                        "value": "20A"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 0.025352057040109493,
+                          "Ireland": 0.9746479429598904
+                        },
+                        "entropy": 0.11819410090784199,
+                        "value": "Ireland"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "name": "hCoV-19/Ireland/D-NVRL-20G32325/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20A"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 4,
+                          "division": {
+                            "value": "Dublin"
+                          },
+                          "division_exposure": {
+                            "value": "Dublin"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Dublin"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.2117486338798,
+                              2020.2117486338798
+                            ],
+                            "value": 2020.2117486338798
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20A"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "name": "hCoV-19/Ireland/KE-NVRL-20G44528/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20A"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 4,
+                          "division": {
+                            "value": "Kildare"
+                          },
+                          "division_exposure": {
+                            "value": "Kildare"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Kildare"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.25,
+                              2020.25
+                            ],
+                            "value": 2020.25
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20A"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "20A"
+                      },
+                      "div": 4,
+                      "legacy_clade_membership": {
+                        "value": "A2a"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.1914628120105,
+                          2020.2117486338798
+                        ],
+                        "value": 2020.2117486338798
+                      },
+                      "subclade_membership": {
+                        "value": "20A"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 0.025352057040109493,
+                          "Ireland": 0.9746479429598904
+                        },
+                        "entropy": 0.11819410090784199,
+                        "value": "Ireland"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "20A"
+                  },
+                  "div": 4,
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.1590676016394,
+                      2020.2097511281831
+                    ],
+                    "value": 2020.1963605803726
+                  },
+                  "subclade_membership": {
+                    "value": "20A"
+                  },
+                  "country": {
+                    "confidence": {
+                      "China": 0.04003600682877563,
+                      "Ireland": 0.9599639931712244
+                    },
+                    "entropy": 0.1680585624957316,
+                    "value": "Ireland"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "20A"
+              },
+              "div": 4,
+              "legacy_clade_membership": {
+                "value": "A2a"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.066496890548,
+                  2020.2044767378832
+                ],
+                "value": 2020.1125163467727
+              },
+              "subclade_membership": {
+                "value": "20A"
+              },
+              "country": {
+                "confidence": {
+                  "China": 0.04564834019010448,
+                  "Ireland": 0.9543516598098956
+                },
+                "entropy": 0.18549697937823417,
+                "value": "Ireland"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "N: R203K, G204R; ORF14: G50N",
+                "clade": "20B"
+              },
+              "mutations": {
+                "N": [
+                  "R203K",
+                  "G204R"
+                ],
+                "ORF14": [
+                  "G50N"
+                ],
+                "nuc": [
+                  "G28881A",
+                  "G28882A",
+                  "G28883C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF14: L67P; S: S813I, Q1208H"
+                  },
+                  "mutations": {
+                    "ORF14": [
+                      "L67P"
+                    ],
+                    "S": [
+                      "S813I",
+                      "Q1208H"
+                    ],
+                    "nuc": [
+                      "G24000T",
+                      "G25186T",
+                      "T28933C"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/D-NVRL-20G35272/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 10,
+                  "division": {
+                    "value": "Dublin"
+                  },
+                  "division_exposure": {
+                    "value": "Dublin"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Dublin"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.217213114754,
+                      2020.217213114754
+                    ],
+                    "value": 2020.217213114754
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "M: V221L; ORF1a: G192D; ORF1b: A1491V; S: W258L"
+                  },
+                  "mutations": {
+                    "M": [
+                      "V221L"
+                    ],
+                    "ORF1a": [
+                      "G192D"
+                    ],
+                    "ORF1b": [
+                      "A1491V"
+                    ],
+                    "S": [
+                      "W258L"
+                    ],
+                    "nuc": [
+                      "G840A",
+                      "C17939T",
+                      "G22335T",
+                      "G27183T"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/CO-NVRL-20G32637/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 11,
+                  "division": {
+                    "value": "Cork"
+                  },
+                  "division_exposure": {
+                    "value": "Cork"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Cork"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2117486338798,
+                      2020.2117486338798
+                    ],
+                    "value": 2020.2117486338798
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "N: T135I; ORF1a: H110Y, T1017I, L3606X"
+                  },
+                  "mutations": {
+                    "N": [
+                      "T135I"
+                    ],
+                    "ORF1a": [
+                      "H110Y",
+                      "T1017I",
+                      "L3606X"
+                    ],
+                    "nuc": [
+                      "C593T",
+                      "C1609T",
+                      "C3315T",
+                      "C7471T",
+                      "G11083-",
+                      "C28677T"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/KY-NVRL-20G35628/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 12,
+                  "division": {
+                    "value": "Kerry"
+                  },
+                  "division_exposure": {
+                    "value": "Kerry"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Kerry"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.1379781420765,
+                      2020.1379781420765
+                    ],
+                    "value": 2020.1379781420765
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: A2199V, L3123F"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "A2199V",
+                      "L3123F"
+                    ],
+                    "nuc": [
+                      "C6861T",
+                      "A9634T",
+                      "C19170T",
+                      "G19509A",
+                      "C23638T"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/D-NVRL-20G35116/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 12,
+                  "division": {
+                    "value": "Dublin"
+                  },
+                  "division_exposure": {
+                    "value": "Dublin"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Dublin"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.217213114754,
+                      2020.217213114754
+                    ],
+                    "value": 2020.217213114754
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "E: F56L; ORF1a: T1822I; ORF1b: M1582I; S: Q675H"
+                  },
+                  "mutations": {
+                    "E": [
+                      "F56L"
+                    ],
+                    "ORF1a": [
+                      "T1822I"
+                    ],
+                    "ORF1b": [
+                      "M1582I"
+                    ],
+                    "S": [
+                      "Q675H"
+                    ],
+                    "nuc": [
+                      "C5730T",
+                      "G10870T",
+                      "G18213T",
+                      "C18555T",
+                      "G23587T",
+                      "T26410C"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/Ireland/D-NVRL-20G35434/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "helix",
+                    "value": "helix"
+                  },
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "Ireland": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Ireland"
+                  },
+                  "div": 13,
+                  "division": {
+                    "value": "Dublin"
+                  },
+                  "division_exposure": {
+                    "value": "Dublin"
+                  },
+                  "host": {
+                    "value": "Homo sapiens"
+                  },
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "location": {
+                    "value": "Dublin"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.217213114754,
+                      2020.217213114754
+                    ],
+                    "value": 2020.217213114754
+                  },
+                  "originating_lab": {
+                    "value": "NVRL"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "Europe"
+                  },
+                  "region_exposure": {
+                    "value": "Europe"
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "submitting_lab": {
+                    "value": "Helixworks Technologies"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1b: A440V"
+                      },
+                      "mutations": {
+                        "ORF1b": [
+                          "A440V"
+                        ],
+                        "nuc": [
+                          "C14786T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T15102C",
+                              "C20703T"
+                            ]
+                          }
+                        },
+                        "name": "hCoV-19/Ireland/D-NVRL-20G35416/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20B"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 10,
+                          "division": {
+                            "value": "Dublin"
+                          },
+                          "division_exposure": {
+                            "value": "Dublin"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Dublin"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.217213114754,
+                              2020.217213114754
+                            ],
+                            "value": 2020.217213114754
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20B"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "ORF1a: I431M"
+                          },
+                          "mutations": {
+                            "ORF1a": [
+                              "I431M"
+                            ],
+                            "nuc": [
+                              "A1558G"
+                            ]
+                          }
+                        },
+                        "name": "hCoV-19/Ireland/D-NVRL-20G35042/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "helix",
+                            "value": "helix"
+                          },
+                          "clade_membership": {
+                            "value": "20B"
+                          },
+                          "country": {
+                            "confidence": {
+                              "Ireland": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Ireland"
+                          },
+                          "div": 9,
+                          "division": {
+                            "value": "Dublin"
+                          },
+                          "division_exposure": {
+                            "value": "Dublin"
+                          },
+                          "host": {
+                            "value": "Homo sapiens"
+                          },
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "location": {
+                            "value": "Dublin"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.214480874317,
+                              2020.214480874317
+                            ],
+                            "value": 2020.214480874317
+                          },
+                          "originating_lab": {
+                            "value": "NVRL"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "Europe"
+                          },
+                          "region_exposure": {
+                            "value": "Europe"
+                          },
+                          "subclade_membership": {
+                            "value": "20B"
+                          },
+                          "submitting_lab": {
+                            "value": "Helixworks Technologies"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000011",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "20B"
+                      },
+                      "div": 8,
+                      "legacy_clade_membership": {
+                        "value": "A2a"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.1034936825922,
+                          2020.2144013543325
+                        ],
+                        "value": 2020.1812370765595
+                      },
+                      "subclade_membership": {
+                        "value": "20B"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 0.023656067078142475,
+                          "Ireland": 0.9763439329218575
+                        },
+                        "entropy": 0.11194555383128359,
+                        "value": "Ireland"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T7771C"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "hCoV-19/Ireland/D-NVRL-20G44603/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "helix",
+                                "value": "helix"
+                              },
+                              "clade_membership": {
+                                "value": "20B"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Ireland": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "Ireland"
+                              },
+                              "div": 8,
+                              "division": {
+                                "value": "Dublin"
+                              },
+                              "division_exposure": {
+                                "value": "Dublin"
+                              },
+                              "host": {
+                                "value": "Homo sapiens"
+                              },
+                              "legacy_clade_membership": {
+                                "value": "A2a"
+                              },
+                              "location": {
+                                "value": "Dublin"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2445355191257,
+                                  2020.2445355191257
+                                ],
+                                "value": 2020.2445355191257
+                              },
+                              "originating_lab": {
+                                "value": "NVRL"
+                              },
+                              "recency": {
+                                "value": "Older"
+                              },
+                              "region": {
+                                "value": "Europe"
+                              },
+                              "region_exposure": {
+                                "value": "Europe"
+                              },
+                              "subclade_membership": {
+                                "value": "20B"
+                              },
+                              "submitting_lab": {
+                                "value": "Helixworks Technologies"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G24193C"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "name": "hCoV-19/Ireland/D-NVRL-20G35221/2020",
+                                "node_attrs": {
+                                  "author": {
+                                    "author": "helix",
+                                    "value": "helix"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Ireland": 0.9999999999999999
+                                    },
+                                    "entropy": -9.99866855976916e-13,
+                                    "value": "Ireland"
+                                  },
+                                  "div": 9,
+                                  "division": {
+                                    "value": "Dublin"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Dublin"
+                                  },
+                                  "host": {
+                                    "value": "Homo sapiens"
+                                  },
+                                  "legacy_clade_membership": {
+                                    "value": "A2a"
+                                  },
+                                  "location": {
+                                    "value": "Dublin"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2020.217213114754,
+                                      2020.217213114754
+                                    ],
+                                    "value": 2020.217213114754
+                                  },
+                                  "originating_lab": {
+                                    "value": "NVRL"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "Europe"
+                                  },
+                                  "region_exposure": {
+                                    "value": "Europe"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Helixworks Technologies"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "name": "hCoV-19/Ireland/D-NVRL-20G35448/2020",
+                                "node_attrs": {
+                                  "author": {
+                                    "author": "helix",
+                                    "value": "helix"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Ireland": 0.9999999999999999
+                                    },
+                                    "entropy": -9.99866855976916e-13,
+                                    "value": "Ireland"
+                                  },
+                                  "div": 9,
+                                  "division": {
+                                    "value": "Dublin"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Dublin"
+                                  },
+                                  "host": {
+                                    "value": "Homo sapiens"
+                                  },
+                                  "legacy_clade_membership": {
+                                    "value": "A2a"
+                                  },
+                                  "location": {
+                                    "value": "Dublin"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2020.217213114754,
+                                      2020.217213114754
+                                    ],
+                                    "value": 2020.217213114754
+                                  },
+                                  "originating_lab": {
+                                    "value": "NVRL"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "Europe"
+                                  },
+                                  "region_exposure": {
+                                    "value": "Europe"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Helixworks Technologies"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000017",
+                            "node_attrs": {
+                              "clade_membership": {
+                                "value": "20B"
+                              },
+                              "div": 9,
+                              "legacy_clade_membership": {
+                                "value": "A2a"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.1999346323569,
+                                  2020.217213114754
+                                ],
+                                "value": 2020.2138419997618
+                              },
+                              "subclade_membership": {
+                                "value": "20B"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "China": 0.023572712679281415,
+                                  "Ireland": 0.9764272873207186
+                                },
+                                "entropy": 0.11163530860428955,
+                                "value": "Ireland"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000016",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "20B"
+                          },
+                          "div": 8,
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.166203791492,
+                              2020.2081914697328
+                            ],
+                            "value": 2020.1983346865595
+                          },
+                          "subclade_membership": {
+                            "value": "20B"
+                          },
+                          "country": {
+                            "confidence": {
+                              "China": 0.03129648370292446,
+                              "Ireland": 0.9687035162970755
+                            },
+                            "entropy": 0.13922038722393978,
+                            "value": "Ireland"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "N: D399H"
+                              },
+                              "mutations": {
+                                "N": [
+                                  "D399H"
+                                ],
+                                "nuc": [
+                                  "C14877T",
+                                  "G29468C"
+                                ]
+                              }
+                            },
+                            "name": "hCoV-19/Ireland/D-NVRL-20G44423/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "helix",
+                                "value": "helix"
+                              },
+                              "clade_membership": {
+                                "value": "20B"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "Ireland": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "Ireland"
+                              },
+                              "div": 9,
+                              "division": {
+                                "value": "Dublin"
+                              },
+                              "division_exposure": {
+                                "value": "Dublin"
+                              },
+                              "host": {
+                                "value": "Homo sapiens"
+                              },
+                              "legacy_clade_membership": {
+                                "value": "A2a"
+                              },
+                              "location": {
+                                "value": "Dublin"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2390710382513,
+                                  2020.2390710382513
+                                ],
+                                "value": 2020.2390710382513
+                              },
+                              "originating_lab": {
+                                "value": "NVRL"
+                              },
+                              "recency": {
+                                "value": "Older"
+                              },
+                              "region": {
+                                "value": "Europe"
+                              },
+                              "region_exposure": {
+                                "value": "Europe"
+                              },
+                              "subclade_membership": {
+                                "value": "20B"
+                              },
+                              "submitting_lab": {
+                                "value": "Helixworks Technologies"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "S: T76I"
+                                  },
+                                  "mutations": {
+                                    "S": [
+                                      "T76I"
+                                    ],
+                                    "nuc": [
+                                      "C21789T"
+                                    ]
+                                  }
+                                },
+                                "name": "hCoV-19/Ireland/D-NVRL-20G35408/2020",
+                                "node_attrs": {
+                                  "author": {
+                                    "author": "helix",
+                                    "value": "helix"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Ireland": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Ireland"
+                                  },
+                                  "div": 8,
+                                  "division": {
+                                    "value": "Dublin"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Dublin"
+                                  },
+                                  "host": {
+                                    "value": "Homo sapiens"
+                                  },
+                                  "legacy_clade_membership": {
+                                    "value": "A2a"
+                                  },
+                                  "location": {
+                                    "value": "Dublin"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2020.217213114754,
+                                      2020.217213114754
+                                    ],
+                                    "value": 2020.217213114754
+                                  },
+                                  "originating_lab": {
+                                    "value": "NVRL"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "Europe"
+                                  },
+                                  "region_exposure": {
+                                    "value": "Europe"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Helixworks Technologies"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "S: L5F"
+                                      },
+                                      "mutations": {
+                                        "S": [
+                                          "L5F"
+                                        ],
+                                        "nuc": [
+                                          "C21575T"
+                                        ]
+                                      }
+                                    },
+                                    "name": "hCoV-19/Ireland/D-NVRL-20G41351/2020",
+                                    "node_attrs": {
+                                      "author": {
+                                        "author": "helix",
+                                        "value": "helix"
+                                      },
+                                      "clade_membership": {
+                                        "value": "20B"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "Ireland": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Ireland"
+                                      },
+                                      "div": 8,
+                                      "division": {
+                                        "value": "Dublin"
+                                      },
+                                      "division_exposure": {
+                                        "value": "Dublin"
+                                      },
+                                      "host": {
+                                        "value": "Homo sapiens"
+                                      },
+                                      "legacy_clade_membership": {
+                                        "value": "A2a"
+                                      },
+                                      "location": {
+                                        "value": "Dublin"
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          2020.233606557377,
+                                          2020.233606557377
+                                        ],
+                                        "value": 2020.233606557377
+                                      },
+                                      "originating_lab": {
+                                        "value": "NVRL"
+                                      },
+                                      "recency": {
+                                        "value": "Older"
+                                      },
+                                      "region": {
+                                        "value": "Europe"
+                                      },
+                                      "region_exposure": {
+                                        "value": "Europe"
+                                      },
+                                      "subclade_membership": {
+                                        "value": "20B"
+                                      },
+                                      "submitting_lab": {
+                                        "value": "Helixworks Technologies"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "name": "hCoV-19/Ireland/D-NVRL-20G32315/2020",
+                                        "node_attrs": {
+                                          "author": {
+                                            "author": "helix",
+                                            "value": "helix"
+                                          },
+                                          "clade_membership": {
+                                            "value": "20B"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Ireland": 0.9999999999999999
+                                            },
+                                            "entropy": -9.99866855976916e-13,
+                                            "value": "Ireland"
+                                          },
+                                          "div": 7,
+                                          "division": {
+                                            "value": "Dublin"
+                                          },
+                                          "division_exposure": {
+                                            "value": "Dublin"
+                                          },
+                                          "host": {
+                                            "value": "Homo sapiens"
+                                          },
+                                          "legacy_clade_membership": {
+                                            "value": "A2a"
+                                          },
+                                          "location": {
+                                            "value": "Dublin"
+                                          },
+                                          "num_date": {
+                                            "confidence": [
+                                              2020.2117486338798,
+                                              2020.2117486338798
+                                            ],
+                                            "value": 2020.2117486338798
+                                          },
+                                          "originating_lab": {
+                                            "value": "NVRL"
+                                          },
+                                          "recency": {
+                                            "value": "Older"
+                                          },
+                                          "region": {
+                                            "value": "Europe"
+                                          },
+                                          "region_exposure": {
+                                            "value": "Europe"
+                                          },
+                                          "subclade_membership": {
+                                            "value": "20B"
+                                          },
+                                          "submitting_lab": {
+                                            "value": "Helixworks Technologies"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "name": "hCoV-19/Ireland/MO-NVRL-20G31888/2020",
+                                        "node_attrs": {
+                                          "author": {
+                                            "author": "helix",
+                                            "value": "helix"
+                                          },
+                                          "clade_membership": {
+                                            "value": "20B"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Ireland": 0.9999999999999999
+                                            },
+                                            "entropy": -9.99866855976916e-13,
+                                            "value": "Ireland"
+                                          },
+                                          "div": 7,
+                                          "division": {
+                                            "value": "Mayo"
+                                          },
+                                          "division_exposure": {
+                                            "value": "Mayo"
+                                          },
+                                          "host": {
+                                            "value": "Homo sapiens"
+                                          },
+                                          "legacy_clade_membership": {
+                                            "value": "A2a"
+                                          },
+                                          "location": {
+                                            "value": "Mayo"
+                                          },
+                                          "num_date": {
+                                            "confidence": [
+                                              2020.2117486338798,
+                                              2020.2117486338798
+                                            ],
+                                            "value": 2020.2117486338798
+                                          },
+                                          "originating_lab": {
+                                            "value": "NVRL"
+                                          },
+                                          "recency": {
+                                            "value": "Older"
+                                          },
+                                          "region": {
+                                            "value": "Europe"
+                                          },
+                                          "region_exposure": {
+                                            "value": "Europe"
+                                          },
+                                          "subclade_membership": {
+                                            "value": "20B"
+                                          },
+                                          "submitting_lab": {
+                                            "value": "Helixworks Technologies"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000020",
+                                    "node_attrs": {
+                                      "clade_membership": {
+                                        "value": "20B"
+                                      },
+                                      "div": 7,
+                                      "legacy_clade_membership": {
+                                        "value": "A2a"
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          2020.1983250413011,
+                                          2020.2117486338798
+                                        ],
+                                        "value": 2020.2117486338798
+                                      },
+                                      "subclade_membership": {
+                                        "value": "20B"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "China": 0.02312500558432679,
+                                          "Ireland": 0.9768749944156733
+                                        },
+                                        "entropy": 0.10996375087011118,
+                                        "value": "Ireland"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000019",
+                                "node_attrs": {
+                                  "clade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "div": 7,
+                                  "legacy_clade_membership": {
+                                    "value": "A2a"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2020.1823013862424,
+                                      2020.2104344704082
+                                    ],
+                                    "value": 2020.2030062151746
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20B"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "China": 0.02909750154067303,
+                                      "Ireland": 0.970902498459327
+                                    },
+                                    "entropy": 0.1315908614781774,
+                                    "value": "Ireland"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "clade_membership": {
+                                "value": "20B"
+                              },
+                              "div": 7,
+                              "legacy_clade_membership": {
+                                "value": "A2a"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.1642802353178,
+                                  2020.209197796167
+                                ],
+                                "value": 2020.194887563352
+                              },
+                              "subclade_membership": {
+                                "value": "20B"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "China": 0.031027225597162558,
+                                  "Ireland": 0.9689727744028375
+                                },
+                                "entropy": 0.13829497244260916,
+                                "value": "Ireland"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "20B"
+                          },
+                          "div": 7,
+                          "legacy_clade_membership": {
+                            "value": "A2a"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.0501869083055,
+                              2020.2042886605625
+                            ],
+                            "value": 2020.1740583236194
+                          },
+                          "subclade_membership": {
+                            "value": "20B"
+                          },
+                          "country": {
+                            "confidence": {
+                              "China": 0.033149957309467994,
+                              "Ireland": 0.9668500426905321
+                            },
+                            "entropy": 0.14552674196503135,
+                            "value": "Ireland"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000012",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "20B"
+                      },
+                      "div": 7,
+                      "legacy_clade_membership": {
+                        "value": "A2a"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.0566868533551,
+                          2020.1975969084092
+                        ],
+                        "value": 2020.1457574682026
+                      },
+                      "subclade_membership": {
+                        "value": "20B"
+                      },
+                      "country": {
+                        "confidence": {
+                          "China": 0.040125131563589655,
+                          "Ireland": 0.9598748684364102
+                        },
+                        "entropy": 0.16834161890154414,
+                        "value": "Ireland"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "20B"
+                  },
+                  "div": 7,
+                  "legacy_clade_membership": {
+                    "value": "A2a"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.0937874617346,
+                      2020.1881081017295
+                    ],
+                    "value": 2020.1208487017386
+                  },
+                  "subclade_membership": {
+                    "value": "20B"
+                  },
+                  "country": {
+                    "confidence": {
+                      "China": 0.03170589163571419,
+                      "Ireland": 0.9682941083642859
+                    },
+                    "entropy": 0.14062290786778875,
+                    "value": "Ireland"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000008",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "20B"
+              },
+              "div": 7,
+              "legacy_clade_membership": {
+                "value": "A2a"
+              },
+              "num_date": {
+                "confidence": [
+                  2019.8979308942917,
+                  2020.119652712265
+                ],
+                "value": 2020.1131410385494
+              },
+              "subclade_membership": {
+                "value": "20B"
+              },
+              "country": {
+                "confidence": {
+                  "China": 0.0014174789425243945,
+                  "Ireland": 0.9985825210574756
+                },
+                "entropy": 0.010713541576956438,
+                "value": "Ireland"
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "clade_membership": {
+            "value": "20A"
+          },
+          "div": 4,
+          "legacy_clade_membership": {
+            "value": "A2a"
+          },
+          "num_date": {
+            "confidence": [
+              2019.8610709899112,
+              2020.109200906432
+            ],
+            "value": 2020.0857419510626
+          },
+          "subclade_membership": {
+            "value": "20A"
+          },
+          "country": {
+            "confidence": {
+              "China": 0.08234347446904551,
+              "Ireland": 0.9176565255309543
+            },
+            "entropy": 0.28445596856754785,
+            "value": "Ireland"
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "clade_membership": {
+        "value": "19A"
+      },
+      "div": 0,
+      "legacy_clade_membership": {
+        "value": "unassigned"
+      },
+      "num_date": {
+        "confidence": [
+          2019.6843905509106,
+          2019.981117417934
+        ],
+        "value": 2019.9446617403253
+      },
+      "subclade_membership": {
+        "value": "19A"
+      },
+      "country": {
+        "confidence": {
+          "China": 0.5852658460185596,
+          "Ireland": 0.4147341539814404
+        },
+        "entropy": 0.6785353430919561,
+        "value": "China"
+      }
+    }
+  },
+  "version": "v2"
+}
